@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+
+
+div .contact-list{
+    background-color: #202C33;
+    height: 100vh;
+}
+
+.contact-list .contact-header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.contact-list .contact-header .img-box{
+    padding-left: 10px;
+}
+
+.contact-list .img-box .profile-pic{
+    width: 50px;
+    border-radius: 25px;
+    margin: 10px 10px;
+}
+
+.contact-list .user-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+
+}
+
+.contact-list .icon{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    color: black;
+}
+
+.contact-list .icons{
+    font-size: 30px;
+}
+
+.link{
+    border: none;
+    text-decoration: none;
+}
+
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+div .contactos{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactos .contacto{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: center;
+    background-color: #202C33;
+    border-radius: 10px;
+    border-top: 3px solid rgba(128, 128, 128, 0.226);
+}
+
+.contactos .contacto-img{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.contact-list .contactos .contacto .text-box{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.contactos .contacto-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.connection-box{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.add-contact{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 30px 20px 30px 20px ;
+    width: 100vw;
+    border-radius: 10px;
+    border: 3px solid rgba(128, 128, 128, 0.226);
+}
+
+.add-contact span{
+    font-size: 30px;
+}

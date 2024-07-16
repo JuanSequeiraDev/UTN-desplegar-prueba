@@ -1,0 +1,12 @@
+
+
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 20vw; */
+    width: 100vw;
+    height: 84vh;
+    overflow-y: scroll;
+    background-image: url('https://cdn.wallpapersafari.com/46/27/ZWbv3h.jpg')
+}

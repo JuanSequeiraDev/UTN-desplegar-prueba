@@ -1,0 +1,85 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.top-section-nav{
+    display: flex;
+    flex-direction: row;
+    position: sticky;z-index: 2;
+    /* margin-left: 20vw; */
+}
+
+.chat-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 8vh;
+    background-color: #202C33;
+    justify-content: space-between;
+    padding-left: 2vw;
+    padding-right: 3vw;
+}
+
+nav .arrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    padding-right: 10px;
+}
+
+.chat-nav .profile-pic{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 25px;
+}
+
+.chat-nav .user-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img .profile-img{
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.top-section-nav .user-info .username-box{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    color: white;
+}
+
+.chat-nav .call-and-config{
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-end{
+    font-size: 25px;
+}
+
+span .videocall{
+    display: flex;
+    flex-direction: row;
+}
+
+div .phonecall{
+    display: flex;
+    flex-direction: row;
+}
+
+div .options{
+    display: flex;
+    flex-direction: row;
+}
