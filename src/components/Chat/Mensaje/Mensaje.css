@@ -27,7 +27,8 @@ div .burbuja{
     padding: 10px 7px;
     height: 90px;
     margin: 10px 10px;
-    min-width: 15vw;
+    min-width: 20vw;
+    max-width: 70vw;
 }
 
 div .date-hour-state{

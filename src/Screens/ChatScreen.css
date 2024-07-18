@@ -2,3 +2,42 @@ div .chat-screen{
     position: relative;
     
 }
+
+.loading-container {
+    margin: 40vh 40vw;
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+}
+
+.loading-progress {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #ACCAFF36;
+    border-radius: 50%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 5px solid transparent;
+        border-top-color: #202C33;
+        top: -5px;
+        left: -5px;
+        animation: spin 1s linear infinite;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

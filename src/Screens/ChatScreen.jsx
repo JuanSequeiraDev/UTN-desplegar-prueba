@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { ChatHeaderInfo, ListaMensajes, MensajeForm } from '../components/Chat'
 import './ChatScreen.css'
 import { useParams } from 'react-router-dom'
-import { MOOK_CONTACTOS } from '../data'
 import { obtainContacts } from '../fetching/obtainContacts'
 
 
@@ -102,12 +101,18 @@ export const ChatScreen = () => {
 
     useEffect(
         ()=> {
-            obtainContacts().then( /* cambiar obtain por get */
-                (contactos) =>{
-                    const MOOK_MENSAJES = contactos.find(contacto => contacto.userId == chatId)
-                    setContacto(MOOK_MENSAJES)
-                    setLoading(false)
-                }
+            setTimeout(  
+                ()=>{
+                    obtainContacts().then( /* cambiar obtain por get */
+                        (contactos) =>{
+                            
+                            const MOOK_MENSAJES = contactos.find(contacto => contacto.userId == chatId)
+                            setContacto(MOOK_MENSAJES)
+                            setLoading(false)
+                        }
+                    )
+                },
+                1000
             )
         },
         []
